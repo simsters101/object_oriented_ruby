@@ -24,6 +24,7 @@ end
 
 class Bike < Car
   def honk_horn
+    puts "Bikes don't have horns!"
   end
 
   def ring_bell
