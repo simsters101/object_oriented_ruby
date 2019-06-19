@@ -25,29 +25,17 @@ class Item
     @price = input_price
   end
 
-  def name
-    @name
-  end
+  attr_reader :name
 
-  def name=(input_name)
-    @name = input_name
-  end
+  attr_writer :name
 
-  def color
-    @color
-  end
+  attr_reader :color
 
-  def color=(input_color)
-    @color = input_color
-  end
+  attr_writer :color
 
-  def price
-    @price
-  end
-
-  def price=(input_price)
-    @price = input_price
-  end
+  attr_reader :price
+  
+  attr_writer :price
 end
 
 item1 = Item.new("tiger", "orange", 5000)
